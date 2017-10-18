@@ -2,7 +2,7 @@ var orm = require("../config/orm.js");
 
 var burgers = {
     all: function(cb) {
-        orm.all('burgers', col, vals, functions(res) {
+        orm.all('burgers', col, vals, function(res) {
             cb(res);
         });
     },

@@ -21,7 +21,7 @@ function sqlObject(ob) {
 };
 
 var orm = {
-    all: function(tableInput, cb) {
+    all: function(tableInput, col, vals, cb) {
         var queryString = 'SELECT * FROM ' + tableInput;
 
         connection.query(queryString, function(err, result) {
